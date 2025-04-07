@@ -8,10 +8,9 @@ import urllib3
 urllib3.disable_warnings()
 requests.packages.urllib3.util.ssl_.DEFAULT_CIPHERS = 'ALL:@SECLEVEL=1'
 
-# توکن رو از متغیر محیطی می‌خونه
-BOT_TOKEN = os.getenv("TELEGRAM_TOKEN")
-bot = telebot.TeleBot(os.getenv("7924841546:AAEQEO5K2xy-77wwAtnKe1GhhYrO75LXvmU"))
-MODEL_URL = "http://127.0.0.1:11434/api/generate"  # اینو بعداً باید عوض کنی اگه مدلت جای دیگه‌ست
+# توکن از متغیر محیطی خونده می‌شه
+bot = telebot.TeleBot(os.getenv("TELEGRAM_TOKEN"))
+MODEL_URL = "http://127.0.0.1:11434/api/generate"  # اینو بعداً با آدرس واقعی مدل عوض کن
 
 def get_model_response(prompt):
     data = {"model": "deepseek-r1:14b", "prompt": prompt, "max_tokens": 100}
