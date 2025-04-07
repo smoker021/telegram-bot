@@ -10,7 +10,7 @@ requests.packages.urllib3.util.ssl_.DEFAULT_CIPHERS = 'ALL:@SECLEVEL=1'
 
 # توکن رو از متغیر محیطی می‌خونه
 BOT_TOKEN = os.getenv("TELEGRAM_TOKEN")
-bot = telebot.TeleBot(7924841546:AAEQEO5K2xy-77wwAtnKe1GhhYrO75LXvmU)
+bot = telebot.TeleBot(os.getenv("7924841546:AAEQEO5K2xy-77wwAtnKe1GhhYrO75LXvmU"))
 MODEL_URL = "http://127.0.0.1:11434/api/generate"  # اینو بعداً باید عوض کنی اگه مدلت جای دیگه‌ست
 
 def get_model_response(prompt):
