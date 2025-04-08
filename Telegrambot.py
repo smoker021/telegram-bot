@@ -52,7 +52,7 @@ def webhook():
 
 if __name__ == "__main__":
     # وب‌هوک رو تنظیم کن
-    webhook_url = f"https://smoker021-telegram-bot.onrender.com/{os.getenv('TELEGRAM_TOKEN')}"  # اینجا URL واقعبت رو بذار
+    webhook_url = f"https://my-telegram-bot-jof0.onrender.com/{os.getenv('TELEGRAM_TOKEN')}"  # اینجا URL واقعبت رو بذار
     bot.remove_webhook()  # وب‌هوک قبلی رو حذف کن
     bot.set_webhook(url=webhook_url)
     print("بات با وب‌هوک شروع شد...")
